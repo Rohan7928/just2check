@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".login">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log In Page"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:textSize="24dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textSize="16dp"/>
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"/>
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="20dp"
+       android:layout_height="wrap_content">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="8dp"
+           android:layout_marginRight="8dp"
+           android:gravity="center"
+           android:text="Password"
+           android:textSize="16dp" />
+       <EditText
+           android:id="@+id/edt_password"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:inputType="textPassword"
+           android:hint="Enter your password"/>
+
+   </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_submit"
+        android:text="Submit"/>
+
+    <CheckBox
+        android:id="@+id/is_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Allow with the agreement"
+        android:checked="true"/>
+
+    <TextView
+        android:id="@+id/txt_output"
+        android:layout_marginTop="24dp"
+        android:textSize="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="....."/>
+
+    <Spinner
+        android:id="@+id/spinnerid"
+        android:layout_width="149dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_popup"
+        android:layout_margin="16dp"
+        android:text="Pop Up Menu"/>
+</LinearLayout>
